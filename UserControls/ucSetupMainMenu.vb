@@ -38,7 +38,7 @@
 
     End Sub
 
-    Private Sub btManualMode_Click(sender As System.Object, e As System.EventArgs) Handles btManualMode.Click
+    Private Sub btManualMode_Click(sender As System.Object, e As System.EventArgs) Handles btManualMode.Click, pnlManualMode.Click, lblManualMode.Click
 
         MsgBox("Display instance of frmWorkSpaceTemplate populated with Manual Mode options")
 

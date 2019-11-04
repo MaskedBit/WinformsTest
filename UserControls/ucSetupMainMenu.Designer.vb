@@ -46,11 +46,11 @@ Partial Class ucSetupMainMenu
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label8.Location = New System.Drawing.Point(4, 373)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(138, 80)
+        Me.Label8.Size = New System.Drawing.Size(147, 80)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = " - Open / Close Pins" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Purge" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Home" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Calibration"
         '
@@ -78,7 +78,7 @@ Partial Class ucSetupMainMenu
         '
         Me.lblManualMode.BackColor = System.Drawing.Color.White
         Me.lblManualMode.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblManualMode.Font = New System.Drawing.Font("Source Sans Pro", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblManualMode.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblManualMode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(96, Byte), Integer))
         Me.lblManualMode.Location = New System.Drawing.Point(0, 238)
         Me.lblManualMode.Name = "lblManualMode"
@@ -111,7 +111,7 @@ Partial Class ucSetupMainMenu
         '
         Me.lblRecipes.BackColor = System.Drawing.Color.White
         Me.lblRecipes.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblRecipes.Font = New System.Drawing.Font("Source Sans Pro", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRecipes.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRecipes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(96, Byte), Integer))
         Me.lblRecipes.Location = New System.Drawing.Point(0, 238)
         Me.lblRecipes.Name = "lblRecipes"
@@ -123,13 +123,13 @@ Partial Class ucSetupMainMenu
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label10.Location = New System.Drawing.Point(446, 373)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(214, 60)
+        Me.Label10.Size = New System.Drawing.Size(223, 60)
         Me.Label10.TabIndex = 1
-        Me.Label10.Text = " - Create new recipes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Edit existing recipes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Recall recipes for production" & _
+        Me.Label10.Text = " - Create new recipes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Edit existing recipes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Recall recipes for production" &
     ""
         '
         'pnlSettings
@@ -156,7 +156,7 @@ Partial Class ucSetupMainMenu
         '
         Me.lblSettings.BackColor = System.Drawing.Color.White
         Me.lblSettings.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblSettings.Font = New System.Drawing.Font("Source Sans Pro", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSettings.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSettings.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(96, Byte), Integer))
         Me.lblSettings.Location = New System.Drawing.Point(0, 238)
         Me.lblSettings.Name = "lblSettings"
@@ -168,11 +168,11 @@ Partial Class ucSetupMainMenu
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label4.Location = New System.Drawing.Point(888, 373)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(206, 60)
+        Me.Label4.Size = New System.Drawing.Size(217, 60)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = " - IMM Interface configuration" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - Controller configuration" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " - User management"
         '
