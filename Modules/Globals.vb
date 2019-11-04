@@ -7,4 +7,6 @@ Module Globals
 
     Public UiStyles As New clsUiStyle
 
+    Public DeviceConfig As New DeviceConfig()
+
 End Module
