@@ -1,0 +1,101 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- The User element defines a particuar user and contains in it the MainMenu elements that represet which of the 
+         four screens the user has access to (Manual, Auto, Recipes and Settings)
+         Each User element contains:
+            - ID - unique identifier
+            - Name - the users display name
+         The MainMenu element defines a system functionality that is avaible to this user
+         It defines the control on the MainMenu form that is displayed and as well as the required configuration 
+         for the BaseWorkspace form to implement its functionaly.
+           - ID - unique identifier
+           - Name - the display name on the user control
+           - MainMenuUIElement - the user control that is placed on the MainMenu screen
+           - IconFile - The icon that is drawn on the user control
+           - FormName - the display name for the BaseWorkspace form
+           - <Tab> Elements - define the required tabs on the BaseWorkspace form and what user control they load in it 
+             its workspace panel
+              - ID - unique identifier
+              - Name - the display name on the tab
+              - UIElement - the user control that is loaded in the workspace panel
+              - Function - will be used to run system functions off the selected tab
+   -->
+  <User ID="production" Name="Production User">
+    <MainMenu ID="manualMode" Name ="Manual Mode" MainMenuUIElement="" IconFile="" FormName ="Manual Mode">
+      <Tab ID="pinCheck" Name ="Pin Check" UIElement="ucProductionManualModePinCheck" Function=""/>
+      <Tab ID="homeCalibration" Name ="Home / Calibration" UIElement="ucProductionManualModeHomeCalibration" Function=""/>
+      <Tab ID="jbCalibration" Name ="Junction Box Calibration" UIElement="ucProductionManualModeJbCalibration" Function=""/>
+      <Tab ID="screwCalibration" Name ="Screw Position Calibration" UIElement="ucProductionManualModeSpCalibration" Function=""/>
+    </MainMenu>
+    <MainMenu ID="automaticMode" Name ="Automatic Mode" MainMenuUIElement="" IconFile="" FormName ="Recipes">
+      <Tab ID="selectRecipe" Name ="Select Recipe" UIElement="ucSetupRecipesManagement" Function=""/>
+      <Tab ID="pinStatus" Name ="Pin Status" UIElement="ucSetupRecipesMoldMap" Function=""/>
+      <Tab ID="lotCounter" Name ="Production Lot" UIElement="ucProductionRunModeLotCounter" Function=""/>
+      <Tab ID="sequenceOverview" Name ="Sequence Overview" UIElement="ucSetupRecipesDDOverviewContainer" Function=""/>
+      <Tab ID="plots" Name ="Plots" UIElement="ucProductionRunModePlots" Function=""/>
+      <Tab ID="signals" Name ="Interface Signals" UIElement="ucProductionRunModeIo" Function=""/>
+    </MainMenu>
+  </User>
+
+  <User ID="setup" Name="Setup User">
+    <MainMenu ID="manualMode" Name ="Manual Mode" MainMenuUIElement="" IconFile="" FormName ="Manual Mode">
+      <Tab ID="pinCheck" Name ="Pin Check" UIElement="ucProductionManualModePinCheck" Function=""/>
+      <Tab ID="homeCalibration" Name ="Home / Calibration" UIElement="ucProductionManualModeHomeCalibration" Function=""/>
+      <Tab ID="jbCalibration" Name ="Junction Box Calibration" UIElement="ucProductionManualModeJbCalibration" Function=""/>
+      <Tab ID="screwCalibration" Name ="Screw Position Calibration" UIElement="ucProductionManualModeSpCalibration" Function=""/>
+      <Tab ID="firmwareUpdate" Name ="Firmware Update" UIElement="ucProductionManualModeJbCalibration" Function=""/>
+    </MainMenu>
+    <MainMenu ID="recipes" Name ="Recipes" MainMenuUIElement="" IconFile="" FormName ="Recipes">
+      <Tab ID="newRecall" Name ="New / Recall" UIElement="ucSetupRecipesManagement" Function=""/>
+      <Tab ID="moldMap" Name ="Mold Map" UIElement="ucSetupRecipesMoldMap" Function=""/>
+      <Tab ID="sequenceOverview" Name ="Sequence Overview" UIElement="ucSetupRecipesDDOverviewContainer" Function=""/>
+      <Tab ID="sequenceEditor" Name ="Sequence Editor" UIElement="ucSetupRecipesDragAndDropEditor" Function=""/>
+      <Tab ID="plots" Name ="Plots" UIElement="ucProductionModePlots" Function=""/>
+      <Tab ID="signals" Name ="Interface Signals" UIElement="ucProductionModeIo" Function=""/>
+    </MainMenu>
+    <MainMenu ID="systemSettings" Name ="Settings" MainMenuUIElement="" IconFile="" FormName ="System Settings">
+      <Tab ID="systemOptions" Name ="System Options" UIElement="ucSystemOptions" Function=""/>
+      <Tab ID="user" Name ="User" UIElement="ucSettingsUsers" Function=""/>
+      <Tab ID="language" Name ="Language" UIElement="ucSettingsLanguage" Function=""/>
+    </MainMenu>
+  </User>
+
+  <User ID="admin1" Name="John Super Doe">
+    <MainMenu ID="manualMode" Name ="Manual Mode" MainMenuUIElement="" IconFile="" FormName ="Manual Mode">
+      <Tab ID="pinCheck" Name ="Pin Check" UIElement="ucProductionManualModePinCheck" Function=""/>
+      <Tab ID="homeCalibration" Name ="Home / Calibration" UIElement="ucProductionManualModeHomeCalibration" Function=""/>
+      <Tab ID="jbCalibration" Name ="Junction Box Calibration" UIElement="ucProductionManualModeJbCalibration" Function=""/>
+      <Tab ID="screwCalibration" Name ="Screw Position Calibration" UIElement="ucProductionManualModeSpCalibration" Function=""/>
+      <Tab ID="firmwareUpdate" Name ="Firmware Update" UIElement="ucProductionManualModeJbCalibration" Function=""/>
+    </MainMenu>
+    <MainMenu ID="recipes" Name ="Recipes" MainMenuUIElement="" IconFile="" FormName ="Recipes">
+      <Tab ID="newRecall" Name ="New / Recall" UIElement="ucSetupRecipesManagement" Function=""/>
+      <Tab ID="moldMap" Name ="Mold Map" UIElement="ucSetupRecipesMoldMap" Function=""/>
+      <Tab ID="sequenceOverview" Name ="Sequence Overview" UIElement="ucSetupRecipesDDOverviewContainer" Function=""/>
+      <Tab ID="sequenceEditor" Name ="Sequence Editor" UIElement="ucSetupRecipesDragAndDropEditor" Function=""/>
+      <Tab ID="plots" Name ="Plots" UIElement="ucProductionRunModePlots" Function=""/>
+      <Tab ID="signals" Name ="Interface Signals" UIElement="ucProductionRunModeIo" Function=""/>
+    </MainMenu>
+    <MainMenu ID="systemSettings" Name ="Settings" MainMenuUIElement="" IconFile="" FormName ="System Settings">
+      <Tab ID="systemOptions" Name ="System Options" UIElement="ucSystemOptions" Function=""/>
+      <Tab ID="user" Name ="User" UIElement="ucSettingsUsers" Function=""/>
+      <Tab ID="language" Name ="Language" UIElement="ucSettingsLanguage" Function=""/>
+    </MainMenu>
+  </User>
+
+  <User ID="production1" Name="John Doe">
+    <MainMenu ID="manualMode" Name ="Manual Mode" MainMenuUIElement="" IconFile="" FormName ="Manual Mode">
+      <Tab ID="pinCheck" Name ="Pin Check" UIElement="ucProductionManualModePinCheck" Function=""/>
+      <Tab ID="homeCalibration" Name ="Home / Calibration" UIElement="ucProductionManualModeHomeCalibration" Function=""/>
+      <Tab ID="jbCalibration" Name ="Junction Box Calibration" UIElement="ucProductionManualModeJbCalibration" Function=""/>
+      <Tab ID="screwCalibration" Name ="Screw Position Calibration" UIElement="ucProductionManualModeSpCalibration" Function=""/>
+    </MainMenu>
+    <MainMenu ID="automaticMode" Name ="Automatic Mode" MainMenuUIElement="" IconFile="" FormName ="Recipes">
+      <Tab ID="selectRecipe" Name ="Select Recipe" UIElement="ucSetupRecipesManagement" Function=""/>
+      <Tab ID="pinStatus" Name ="Pin Status" UIElement="ucSetupRecipesMoldMap" Function=""/>
+      <Tab ID="lotCounter" Name ="Production Lot" UIElement="ucProductionRunModeLotCounter" Function=""/>
+      <Tab ID="sequenceOverview" Name ="Sequence Overview" UIElement="ucSetupRecipesDDOverviewContainer" Function=""/>
+      <Tab ID="plots" Name ="Plots" UIElement="ucProductionRunModePlots" Function=""/>
+      <Tab ID="signals" Name ="Interface Signals" UIElement="ucProductionRunModeIo" Function=""/>
+    </MainMenu>
+  </User>
+</xs:schema>
