@@ -41,7 +41,7 @@ Partial Class frmWorkSpaceTemplate
         'lblHeader
         '
         Me.lblHeader.BackColor = System.Drawing.Color.Transparent
-        Me.lblHeader.Font = New System.Drawing.Font("Source Sans Pro", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeader.Location = New System.Drawing.Point(105, 3)
         Me.lblHeader.Name = "lblHeader"
         Me.lblHeader.Size = New System.Drawing.Size(1499, 90)
@@ -112,7 +112,7 @@ Partial Class frmWorkSpaceTemplate
         '
         Me.lblUserName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblUserName.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(96, Byte), Integer))
-        Me.lblUserName.Font = New System.Drawing.Font("Source Sans Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUserName.ForeColor = System.Drawing.Color.White
         Me.lblUserName.Location = New System.Drawing.Point(78, 26)
         Me.lblUserName.Name = "lblUserName"
@@ -158,13 +158,13 @@ Partial Class frmWorkSpaceTemplate
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents lblHeader As System.Windows.Forms.Label
     Friend WithEvents btHome As System.Windows.Forms.PictureBox
-    Friend WithEvents flpMenuBar As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents TopPanel As System.Windows.Forms.Panel
     Friend WithEvents TopRightPanel As System.Windows.Forms.Panel
     Friend WithEvents lblUserName As System.Windows.Forms.Label
     Friend WithEvents UcStatusBar As WinformsTest.ucStatusBar
-    Friend WithEvents MainPanel As System.Windows.Forms.Panel
+    Protected WithEvents lblHeader As Label
+    Protected WithEvents flpMenuBar As FlowLayoutPanel
+    Protected WithEvents MainPanel As Panel
 End Class

@@ -92,6 +92,24 @@
     </Compile>
     <Compile Include="Classes\clsUiStyle.vb" />
     <Compile Include="Classes\clsUnits.vb" />
+    <Compile Include="Forms\frmManualMode.Designer.vb">
+      <DependentUpon>frmManualMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManualMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRecipes.Designer.vb">
+      <DependentUpon>frmRecipes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRecipes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmWorkSpaceTemplate.Designer.vb">
       <DependentUpon>frmWorkSpaceTemplate.vb</DependentUpon>
     </Compile>
@@ -134,6 +152,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\frmManualMode.resx">
+      <DependentUpon>frmManualMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRecipes.resx">
+      <DependentUpon>frmRecipes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmWorkSpaceTemplate.resx">
       <DependentUpon>frmWorkSpaceTemplate.vb</DependentUpon>
     </EmbeddedResource>

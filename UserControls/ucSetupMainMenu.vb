@@ -40,18 +40,21 @@
 
     Private Sub btManualMode_Click(sender As System.Object, e As System.EventArgs) Handles btManualMode.Click, pnlManualMode.Click, lblManualMode.Click
 
-        MsgBox("Display instance of frmWorkSpaceTemplate populated with Manual Mode options")
+        Dim manualModeForm As New frmManualMode
+        manualModeForm.Show()
 
     End Sub
     Private Sub Recipes_Click(sender As System.Object, e As System.EventArgs) Handles btRecipes.Click, lblRecipes.Click, pnlRecipes.Click
 
-        MsgBox("Display instance of frmWorkSpaceTemplate populated with Recipe options")
+        Dim recipeForm As New frmRecipes
+        recipeForm.Show()
 
     End Sub
 
     Private Sub btSettings_Click(sender As System.Object, e As System.EventArgs) Handles btSettings.Click, lblSettings.Click, pnlSettings.Click
 
-        MsgBox("Display instance of frmWorkSpaceTemplate populated with Settings options")
+        Dim settingsForm As New frmSettings
+        settingsForm.Show()
 
     End Sub
 
