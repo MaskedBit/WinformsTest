@@ -23,12 +23,12 @@ Partial Class SettingsForm
         '
         'lblHeader
         '
-        Me.lblHeader.Text = "Settings"
+        Me.lblHeader.Text = "System Settings"
         '
-        'frmSettings
+        'SettingsForm
         '
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
-        Me.Name = "frmSettings"
+        Me.Name = "SettingsForm"
         Me.ResumeLayout(False)
 
     End Sub

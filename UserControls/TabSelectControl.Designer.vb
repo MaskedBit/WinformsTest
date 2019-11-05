@@ -45,10 +45,10 @@ Partial Class TabSelectControl
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
         Me.ForeColor = System.Drawing.Color.White
-        Me.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.Margin = New System.Windows.Forms.Padding(8, 12, 8, 12)
         Me.Name = "TabSelectControl"
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 8)
-        Me.Size = New System.Drawing.Size(403, 76)
+        Me.Size = New System.Drawing.Size(403, 80)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

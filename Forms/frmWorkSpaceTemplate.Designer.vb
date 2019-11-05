@@ -66,7 +66,6 @@ Partial Class frmWorkSpaceTemplate
         Me.flpMenuBar.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.flpMenuBar.Location = New System.Drawing.Point(105, 95)
         Me.flpMenuBar.Margin = New System.Windows.Forms.Padding(0)
-        Me.flpMenuBar.MinimumSize = New System.Drawing.Size(0, 50)
         Me.flpMenuBar.Name = "flpMenuBar"
         Me.flpMenuBar.Padding = New System.Windows.Forms.Padding(10, 2, 10, 0)
         Me.flpMenuBar.Size = New System.Drawing.Size(1815, 63)

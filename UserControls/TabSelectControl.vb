@@ -35,7 +35,7 @@
 
     End Sub
 
-    ' Yecch!  Is this really the best way to add a bottom border???
+    ' Yecch!  Is this really the best way to add a bottom border??? 
     Private Sub TabControl_Paint(ByVal sender As Object, ByVal e As PaintEventArgs) Handles MyBase.Paint
         If IsActive Then
             ControlPaint.DrawBorder(e.Graphics, Me.ClientRectangle,
