@@ -14,6 +14,10 @@ Public Class frmSetupMainMenu
             .lblUserName.BackColor = UiStyles.MainMenuBackgroundColor
             .lblUserGroup.BackColor = UiStyles.MainMenuBackgroundColor
         End With
+        Dim UserFunctions As New UserFunctionReader("..\\..\\XML\\UserFunction.xml")
+
+        ' TODO:  Remove debug output
+        UserFunctions.UserFunctions.DebugPrint("")
 
     End Sub
 

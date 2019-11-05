@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmManualMode
+Partial Class frmAutomaticMode
     Inherits WinformsTest.frmWorkSpaceTemplate
 
     'Form overrides dispose to clean up the component list.
@@ -23,12 +23,12 @@ Partial Class frmManualMode
         '
         'lblHeader
         '
-        Me.lblHeader.Text = "Manual Mode"
+        Me.lblHeader.Text = "Automatic Mode"
         '
-        'frmManualMode
+        'frmAutomaticMode
         '
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
-        Me.Name = "frmManualMode"
+        Me.Name = "frmAutomaticMode"
         Me.ResumeLayout(False)
 
     End Sub

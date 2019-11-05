@@ -92,18 +92,28 @@
     </Compile>
     <Compile Include="Classes\clsUiStyle.vb" />
     <Compile Include="Classes\clsUnits.vb" />
-    <Compile Include="Classes\ConnectionType.vb" />
-    <Compile Include="Classes\DeviceConfig.vb" />
-    <Compile Include="Classes\ManualModeConfig.vb" />
-    <Compile Include="Classes\NewRecallConfig.vb" />
-    <Compile Include="Classes\PinCheckConfig.vb" />
-    <Compile Include="Classes\PinConfig.vb" />
-    <Compile Include="Classes\PressureUnits.vb" />
-    <Compile Include="Classes\RecipeConfig.vb" />
-    <Compile Include="Classes\SystemSettings.vb" />
-    <Compile Include="Classes\TraceOptions.vb" />
-    <Compile Include="Classes\TraceUnits.vb" />
-    <Compile Include="Classes\ValueWithType.vb" />
+    <Compile Include="Model\ConnectionType.vb" />
+    <Compile Include="Model\DeviceConfig.vb" />
+    <Compile Include="Model\ManualModeConfig.vb" />
+    <Compile Include="Model\NewRecallConfig.vb" />
+    <Compile Include="Model\PinCheckConfig.vb" />
+    <Compile Include="Model\PinConfig.vb" />
+    <Compile Include="Model\PressureUnits.vb" />
+    <Compile Include="Model\RecipeConfig.vb" />
+    <Compile Include="Model\SystemSettings.vb" />
+    <Compile Include="Model\TraceOptions.vb" />
+    <Compile Include="Model\TraceUnits.vb" />
+    <Compile Include="Classes\UserOptions\MenuOptions.vb" />
+    <Compile Include="Classes\UserOptions\TabOptions.vb" />
+    <Compile Include="Classes\UserOptions\UserFunction.vb" />
+    <Compile Include="Classes\UserOptions\UserOptions.vb" />
+    <Compile Include="Model\ValueWithType.vb" />
+    <Compile Include="Forms\frmAutomaticMode.Designer.vb">
+      <DependentUpon>frmAutomaticMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAutomaticMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmManualMode.Designer.vb">
       <DependentUpon>frmManualMode.vb</DependentUpon>
     </Compile>
@@ -135,6 +145,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modules\Globals.vb" />
+    <Compile Include="Modules\UserFunctionReader.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -164,6 +175,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\frmAutomaticMode.resx">
+      <DependentUpon>frmAutomaticMode.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmManualMode.resx">
       <DependentUpon>frmManualMode.vb</DependentUpon>
     </EmbeddedResource>
