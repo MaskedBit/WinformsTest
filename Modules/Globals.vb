@@ -7,6 +7,7 @@ Module Globals
 
     Public UiStyles As New clsUiStyle
 
-    Public gDeviceConfig As New DeviceConfig()
+    Public gDeviceConfig As New DeviceModel()
+    Public gActiveUserOptions As UserOptions
 
 End Module

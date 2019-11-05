@@ -19,4 +19,14 @@ Public Class UserOptions
         Next
     End Sub
 
+    Public Function GetMenuOptions(ByRef menuId As String)
+        For Each curMenu In Me.MenuOptions
+            If curMenu.ID = menuId Then
+                Return curMenu
+            End If
+        Next
+
+        Return Me.MenuOptions.First()
+    End Function
+
 End Class

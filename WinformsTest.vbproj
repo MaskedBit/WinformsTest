@@ -92,44 +92,45 @@
     </Compile>
     <Compile Include="Classes\clsUiStyle.vb" />
     <Compile Include="Classes\clsUnits.vb" />
+    <Compile Include="Model\AutomaticModeModel.vb" />
     <Compile Include="Model\ConnectionType.vb" />
-    <Compile Include="Model\DeviceConfig.vb" />
-    <Compile Include="Model\ManualModeConfig.vb" />
-    <Compile Include="Model\NewRecallConfig.vb" />
-    <Compile Include="Model\PinCheckConfig.vb" />
-    <Compile Include="Model\PinConfig.vb" />
+    <Compile Include="Model\DeviceModel.vb" />
+    <Compile Include="Model\ManualModeModel.vb" />
+    <Compile Include="Model\NewRecallModel.vb" />
+    <Compile Include="Model\PinCheckModel.vb" />
+    <Compile Include="Model\PinModel.vb" />
     <Compile Include="Model\PressureUnits.vb" />
-    <Compile Include="Model\RecipeConfig.vb" />
+    <Compile Include="Model\RecipeModel.vb" />
     <Compile Include="Model\SystemSettings.vb" />
-    <Compile Include="Model\TraceOptions.vb" />
+    <Compile Include="Model\TraceModel.vb" />
     <Compile Include="Model\TraceUnits.vb" />
     <Compile Include="Classes\UserOptions\MenuOptions.vb" />
     <Compile Include="Classes\UserOptions\TabOptions.vb" />
     <Compile Include="Classes\UserOptions\UserFunction.vb" />
     <Compile Include="Classes\UserOptions\UserOptions.vb" />
     <Compile Include="Model\ValueWithType.vb" />
-    <Compile Include="Forms\frmAutomaticMode.Designer.vb">
-      <DependentUpon>frmAutomaticMode.vb</DependentUpon>
+    <Compile Include="Forms\AutomaticModeForm.Designer.vb">
+      <DependentUpon>AutomaticModeForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAutomaticMode.vb">
+    <Compile Include="Forms\AutomaticModeForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmManualMode.Designer.vb">
-      <DependentUpon>frmManualMode.vb</DependentUpon>
+    <Compile Include="Forms\ManualModeForm.Designer.vb">
+      <DependentUpon>ManualModeForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmManualMode.vb">
+    <Compile Include="Forms\ManualModeForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmRecipes.Designer.vb">
-      <DependentUpon>frmRecipes.vb</DependentUpon>
+    <Compile Include="Forms\RecipesForm.Designer.vb">
+      <DependentUpon>RecipesForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmRecipes.vb">
+    <Compile Include="Forms\RecipesForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmSettings.Designer.vb">
-      <DependentUpon>frmSettings.vb</DependentUpon>
+    <Compile Include="Forms\SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmSettings.vb">
+    <Compile Include="Forms\SettingsForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmWorkSpaceTemplate.Designer.vb">
@@ -161,6 +162,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UserControls\TabSelectControl.Designer.vb">
+      <DependentUpon>TabSelectControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TabSelectControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UserControls\ucSetupMainMenu.Designer.vb">
       <DependentUpon>ucSetupMainMenu.vb</DependentUpon>
     </Compile>
@@ -175,17 +182,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\frmAutomaticMode.resx">
-      <DependentUpon>frmAutomaticMode.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\AutomaticModeForm.resx">
+      <DependentUpon>AutomaticModeForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmManualMode.resx">
-      <DependentUpon>frmManualMode.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\ManualModeForm.resx">
+      <DependentUpon>ManualModeForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmRecipes.resx">
-      <DependentUpon>frmRecipes.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\RecipesForm.resx">
+      <DependentUpon>RecipesForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSettings.resx">
-      <DependentUpon>frmSettings.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmWorkSpaceTemplate.resx">
       <DependentUpon>frmWorkSpaceTemplate.vb</DependentUpon>
@@ -198,6 +205,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TabSelectControl.resx">
+      <DependentUpon>TabSelectControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucSetupMainMenu.resx">
       <DependentUpon>ucSetupMainMenu.vb</DependentUpon>

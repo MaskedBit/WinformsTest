@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmSettings
+Partial Class SettingsForm
     Inherits WinformsTest.frmWorkSpaceTemplate
 
     'Form overrides dispose to clean up the component list.

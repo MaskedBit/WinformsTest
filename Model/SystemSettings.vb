@@ -1,5 +1,5 @@
 ﻿Public Class SystemSettings
-    Public Property TraceConfig As TraceOptions = New TraceOptions()
+    Public Property TraceConfig As TraceModel = New TraceModel()
     ' TODO:  Add config for User
     ' TODO:  Add config for Language
 

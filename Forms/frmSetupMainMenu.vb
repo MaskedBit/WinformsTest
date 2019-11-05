@@ -19,6 +19,14 @@ Public Class frmSetupMainMenu
         ' TODO:  Remove debug output
         UserFunctions.UserFunctions.DebugPrint("")
 
+        ' Set the options for the current user
+        For Each curUser In UserFunctions.UserFunctions.UserOptions
+            If curUser.Name = gActiveUserName Then
+                gActiveUserOptions = curUser
+                Exit For
+            End If
+        Next
+
     End Sub
 
     Public Sub CenterUserControl(ByRef panel As Panel, ByRef uc As Object)

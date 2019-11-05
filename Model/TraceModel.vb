@@ -1,4 +1,4 @@
-﻿Public Class TraceOptions
+﻿Public Class TraceModel
 
     Public Property ExtendCollection As ValueWithType = New ValueWithType(1, TraceUnits.Seconds)
     Public Property SampleRate As ValueWithType = New ValueWithType(0.04D, TraceUnits.Seconds)

@@ -38,24 +38,27 @@
 
     End Sub
 
+    ' Bug fix:  Need to handle click for all 3 components of the display
     Private Sub btManualMode_Click(sender As System.Object, e As System.EventArgs) Handles btManualMode.Click, pnlManualMode.Click, lblManualMode.Click
 
-        Dim manualModeForm As New frmManualMode(gDeviceConfig.ManualModeConfig)
+        Dim manualModeForm As New ManualModeForm(gActiveUserOptions.GetMenuOptions("manualMode"), gDeviceConfig.ManualModeConfig)
         manualModeForm.Show()
 
     End Sub
     Private Sub Recipes_Click(sender As System.Object, e As System.EventArgs) Handles btRecipes.Click, lblRecipes.Click, pnlRecipes.Click
 
-        Dim recipeForm As New frmRecipes(gDeviceConfig.RecipeConfig)
+        Dim recipeForm As New RecipesForm(gActiveUserOptions.GetMenuOptions("recipes"), gDeviceConfig.RecipeConfig)
         recipeForm.Show()
 
     End Sub
 
     Private Sub btSettings_Click(sender As System.Object, e As System.EventArgs) Handles btSettings.Click, lblSettings.Click, pnlSettings.Click
 
-        Dim settingsForm As New frmSettings(gDeviceConfig.SystemSettings)
+        Dim settingsForm As New SettingsForm(gActiveUserOptions.GetMenuOptions("systemSettings"), gDeviceConfig.SystemSettings)
         settingsForm.Show()
 
     End Sub
+
+    ' TODO:  Add support for Automatic Mode
 
 End Class

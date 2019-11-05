@@ -1,5 +1,5 @@
-﻿Public Class frmManualMode
-    Public Sub New(ByRef config As ManualModeConfig)
+﻿Public Class RecipesForm
+    Public Sub New(ByRef menu As MenuOptions, ByRef config As RecipeModel)
 
         ' This call is required by the designer.
         InitializeComponent()

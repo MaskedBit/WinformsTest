@@ -1,4 +1,4 @@
-﻿Public Class PinConfig
+﻿Public Class PinModel
     Public Property Name As String
     Public Property IsEnabled As Boolean
 
