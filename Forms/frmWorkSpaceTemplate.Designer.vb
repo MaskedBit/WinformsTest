@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmWorkSpaceTemplate
+Partial Class FrmWorkSpaceTemplate
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmWorkSpaceTemplate
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWorkSpaceTemplate))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmWorkSpaceTemplate))
         Me.lblHeader = New System.Windows.Forms.Label()
         Me.btHome = New System.Windows.Forms.PictureBox()
         Me.flpMenuBar = New System.Windows.Forms.FlowLayoutPanel()

@@ -101,7 +101,7 @@
     <Compile Include="Model\PinModel.vb" />
     <Compile Include="Model\PressureUnits.vb" />
     <Compile Include="Model\RecipeModel.vb" />
-    <Compile Include="Model\SystemSettings.vb" />
+    <Compile Include="Model\SystemSettingsModel.vb" />
     <Compile Include="Model\TraceModel.vb" />
     <Compile Include="Model\TraceUnits.vb" />
     <Compile Include="Classes\UserOptions\MenuOptions.vb" />
@@ -247,6 +247,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

@@ -21,7 +21,6 @@
     End Sub
 
     Friend Sub SetActive()
-        MessageBox.Show("Setting " + TabOptions.Name + " active")
         IsActive = True
         Me.Refresh()
     End Sub
