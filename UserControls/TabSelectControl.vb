@@ -2,7 +2,7 @@
     Public Property TabOptions As TabOptions
     Private Property IsActive As Boolean = False
 
-    Public Event TabSelected()
+    Public Event TabSelected(ByRef uiElement As String)
 
     Public Sub New(ByRef tabOptions As TabOptions)
 
@@ -16,7 +16,7 @@
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-        RaiseEvent TabSelected()
+        RaiseEvent TabSelected(Me.TabOptions.UIElement)
         Me.SetActive()
     End Sub
 

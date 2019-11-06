@@ -100,14 +100,18 @@
                     _SelectedOption = My.Resources.RedOptionSelected
 
             End Select
-            RaiseEvent UiStyleChanged()
+            If IsInitialized Then
+                RaiseEvent UiStyleChanged()
+            End If
         End Set
 
     End Property
 
+    Private Property IsInitialized = False
+
     Public Sub New()
 
         UiStyle = UiStyles.eShop
-
+        Me.IsInitialized = True
     End Sub
 End Class

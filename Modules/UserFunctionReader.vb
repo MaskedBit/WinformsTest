@@ -88,7 +88,7 @@ Public Class UserFunctionReader
         With firmwareUpdate
             .ID = "firmwareUpdate"
             .Name = "Firmware Update"
-            .UIElement = "ucProductionManualModeJbCalibration"
+            .UIElement = "ucProductionManualModeFirmwareUpdate"
         End With
         adminManualMode.TabOptions.Add(firmwareUpdate)
 

@@ -162,10 +162,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UserControls\DummyCheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\NotImplementedControl.Designer.vb">
+      <DependentUpon>NotImplementedControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NotImplementedControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UserControls\TabSelectControl.Designer.vb">
       <DependentUpon>TabSelectControl.vb</DependentUpon>
     </Compile>
     <Compile Include="UserControls\TabSelectControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucManualModePinCheck.Designer.vb">
+      <DependentUpon>ucManualModePinCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucManualModePinCheck.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionManualModePinCheck.Designer.vb">
+      <DependentUpon>ucProductionManualModePinCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionManualModePinCheck.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ucSetupMainMenu.Designer.vb">
@@ -206,8 +227,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NotImplementedControl.resx">
+      <DependentUpon>NotImplementedControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TabSelectControl.resx">
       <DependentUpon>TabSelectControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucManualModePinCheck.resx">
+      <DependentUpon>ucManualModePinCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionManualModePinCheck.resx">
+      <DependentUpon>ucProductionManualModePinCheck.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucSetupMainMenu.resx">
       <DependentUpon>ucSetupMainMenu.vb</DependentUpon>
